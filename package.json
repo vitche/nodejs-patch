@@ -1,0 +1,19 @@
+{
+    "name": "patch",
+    "description": "A small library for patching third-party modules without changing their code",
+    "version": "0.0.1",
+    "main": "./patch.js",
+    "author": {
+        "name": "Vitche Research Team",
+        "email": "developer@vitche.com"
+    },
+    "keywords": [],
+    "licenses": {
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/vitche/nodejs-patch.git"
+    },
+    "dependencies": {
+    }
+}
