@@ -18,12 +18,14 @@ module.exports = {
                 callback(error);
                 return;
             }
+            fileData = fileData.replace("\r\n", "\n");
             // Read the patch
             fs.readFile(patchFile, 'utf8', function (error, patchData) {
                 if (error) {
                     callback(error);
                     return;
                 }
+                patchData = patchData.replace("\r\n", "\n");
                 // Parse the patch rule
                 var parsedPatch = diff.parsePatch(patchData);
                 // Apply the patch
